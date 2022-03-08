@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body {
+			background-image: url(fort.jpg);
+			background-size: cover
+		}
+		@font-face {
+			font-family: fort;
+			src: url(fortnitebattlefest.ttf);
+		}
+		.imag {
+			width: 100px;
+			position: absolute;
+		}
+		.txt {
+			color: white;
+			font-family: fort;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="col-2 my-2 mx-2" style="height: 400px; background-color: #e6af91; opacity: 0.8; position: absolute;">
+		<h1 class="txt " style="text-align: center;">Предметы</h1>
+		<ol>
+			<li class="txt txt11" style="font-size: 30px">Дэб</li>
+			<li class="txt txt22" style="font-size: 30px">Черный чел</li>
+			<li class="txt txt33" style="font-size: 30px">Монархи</li>
+			<li class="txt txt44" style="font-size: 30px">Райан Гослинг</li>
+			<li class="txt txt55" style="font-size: 30px">Нолик</li>
+		</ol>
+		<h1 class="txt " style="text-align: center;">Очки: <span class="text228">0</span></h1>
+	</div>
+	<div>	
+		<img src="1.png" class="rob imag" style="margin-left: 1000px; margin-top: 900px">
+		<img src="2.png" class="chel imag" style="margin-left: 1200px; width: 50px; margin-top: 450px">
+		<img src="3.png" class="kros imag" style="margin-left: 500px; width: 40px; margin-top: 800px">
+		<img src="4.png" class="rya imag" style="margin-left: 1700px; width: 70px; margin-top: 400px">
+		<img src="5.png" class="fiks imag" style="margin-left: 1400px; width: 40px; margin-top: 100px">
+	</div>
+		
+<script type="text/javascript">
+			let score;
+
+		score = 0;
+
+		document.querySelector('.rob').onclick = function() {
+			score += 1
+			document.querySelector('.text228').innerHTML = score;
+			document.querySelector('.rob').style.display = 'none';
+			document.querySelector('.txt11').style.textDecoration = 'line-through';
+		}
+		document.querySelector('.chel').onclick = function() {
+			score += 1
+			document.querySelector('.text228').innerHTML = score;
+			document.querySelector('.chel').style.display = 'none';
+			document.querySelector('.txt22').style.textDecoration = 'line-through';
+		}
+		document.querySelector('.kros').onclick = function() {
+			score += 1
+			document.querySelector('.text228').innerHTML = score;
+			document.querySelector('.kros').style.display = 'none';
+			document.querySelector('.txt33').style.textDecoration = 'line-through';
+		}
+		document.querySelector('.rya').onclick = function() {
+			score += 1
+			document.querySelector('.text228').innerHTML = score;
+			document.querySelector('.rya').style.display = 'none';
+			document.querySelector('.txt44').style.textDecoration = 'line-through';
+		}
+		document.querySelector('.fiks').onclick = function() {
+			score += 1
+			document.querySelector('.text228').innerHTML = score;
+			document.querySelector('.fiks').style.display = 'none';
+			document.querySelector('.txt55').style.textDecoration = 'line-through';
+		}
+</script>
+</body>
+</html>
